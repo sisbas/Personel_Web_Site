@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sisbas_mvc", "sisbas_mvc\sisbas_mvc.csproj", "{47B82F6A-3864-4B59-8823-975B4E1F58D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5C6ECA5D-00E9-4974-806E-59A378E2FA7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{015363AC-4C50-46F1-B6EA-978DDB14D4EE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{F14C0F0E-26D9-45B6-976B-B73999E8F079}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\sisbasmvc.json = PublishScripts\Templates\sisbasmvc.json
+		PublishScripts\Templates\sisbasmvc.param.dev.json = PublishScripts\Templates\sisbasmvc.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B82F6A-3864-4B59-8823-975B4E1F58D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B82F6A-3864-4B59-8823-975B4E1F58D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B82F6A-3864-4B59-8823-975B4E1F58D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B82F6A-3864-4B59-8823-975B4E1F58D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{015363AC-4C50-46F1-B6EA-978DDB14D4EE} = {5C6ECA5D-00E9-4974-806E-59A378E2FA7A}
+		{F14C0F0E-26D9-45B6-976B-B73999E8F079} = {5C6ECA5D-00E9-4974-806E-59A378E2FA7A}
+	EndGlobalSection
+EndGlobal

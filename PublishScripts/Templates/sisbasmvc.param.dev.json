@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "sisbasmvc"
+  },
+  "hostingPlanName": {
+    "value": "ServicePlan2d72ee0e-937d"
+  },
+  "siteLocation": {
+    "value": "South Central US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "8e5b9eba-6c32-4f66-89e6-748e064b2dad"
+  },
+  "resourceGroup": {
+    "value": "Deneme"
+  }
+}

@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-inverse nav-justified">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="www.sisbas.com">&nbsp;sisbas.com </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="@Url.Action("Index","Home")"><span class="glyphicon glyphicon-home"> AnaSayfa</span></a></li>
+                <li><a href="@Url.Action("About","Home")"><span class="glyphicon glyphicon-user"> Hakkında</span></a></li>
+                <li><a href="http://semihisbas.blogspot.com.tr"><span class="glyphicon glyphicon-book"> Blog</span></a></li>
+                <li><a href="@Url.Action("Communication","Home")"><span class="glyphicon glyphicon-envelope"> İletişim</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    $().ready(function () {
+        var url = window.location;
+        $('ul.nav a').filter(function () {
+            return this.href == url;
+        }).parent().addClass('active');
+    });    
+</script>
