@@ -3,10 +3,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>    
+    <title>@ViewBag.Title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
@@ -20,11 +22,32 @@
             background-color: #f2f2f2;
             padding: 25px;
         }
+
+        p {
+            font-family: 'Inconsolata', monospace;
+            padding: 4px 7px 2px 4px;
+            margin: auto;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+            p:first-letter {
+                text-transform: uppercase;
+                font-size: 48px;
+                font-weight: 500;
+            }
+
+        div.well h3 {
+            text-align: justify;
+            text-justify:inter-word;
+            font-family: 'Secular One', sans-serif;
+            font-weight:700;
+        }
     </style>
 </head>
 <body>
     @Html.Partial("_PartialPageHeader")
-        @RenderBody()
+    @RenderBody()
     @Html.Partial("_PartialPageFooter")
 </body>
 </html>
