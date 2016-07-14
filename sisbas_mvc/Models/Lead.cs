@@ -6,12 +6,12 @@ namespace sisbas_mvc.Models
     {
         [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "* A valid first name is required.")]
-        [Display(Name = "First Name")]
+        [Display(Name = "Ad")]
         public string FirstName { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "* A valid last name is required.")]
-        [Display(Name = "Last Name")]
+        [Display(Name = "Soyad")]
         public string LastName { get; set; }
 
         [Required]
